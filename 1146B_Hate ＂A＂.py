@@ -1,0 +1,2 @@
+arr=input()
+print(arr[:int(len(arr)-int(len(arr.replace('a',''))/2))] if arr[int(len(arr)-int(len(arr.replace('a',''))/2)):]==arr.replace('a','')[int(len(arr.replace('a',''))/2):] and arr.replace('a','')[:int(len(arr.replace('a',''))/2)]==arr.replace('a','')[int(len(arr.replace('a',''))/2):] else ':(')
