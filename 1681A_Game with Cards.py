@@ -1,0 +1,13 @@
+t = int(input())
+for i in range(t):
+    n = int(input())
+    arr = input().split()
+    arr = list(map(int, arr))
+    arr.sort()
+    m = int(input())
+    brr = input().split()
+    brr = list(map(int, brr))
+    brr.sort()
+    if arr[-1] > brr[-1]: print("Alice\nAlice")
+    elif arr[-1] < brr[-1]: print("Bob\nBob")
+    else: print("Alice\nBob")
